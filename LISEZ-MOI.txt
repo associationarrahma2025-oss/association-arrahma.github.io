@@ -1,0 +1,27 @@
+ARRAHMA — SITE VITRINE COMPLET (VERSION DE TRAVAIL)
+
+Contenu :
+- Page d’accueil avec identité visuelle, slogan, thématiques, transversalité, actions, actualités, réseaux sociaux et contact.
+- Pages : association, actions (avec filtres), projets, actualités, newsletter, dons, contact, mentions légales.
+- Sept pages thématiques : parentalité, enfance, jeunesse, inclusion numérique, insertion, culture & sport, solidarité.
+- Feuilles de style responsive, navigation mobile et filtres d’actions.
+- Logo officiel fourni et visuel illustratif inclus.
+
+À vérifier avant mise en ligne :
+1. Le site actuel n’est pas modifié par cette archive. Tester cette version séparément avant toute publication.
+2. La photo incluse est illustrative : la remplacer si besoin par une image validée par l’association et vérifier les droits d’utilisation.
+3. Les liens vers les réseaux sociaux et les QR codes restent à ajouter lorsque les comptes seront vérifiés.
+4. Les fiches d’actions et actualités sont des emplacements de contenu : ne pas les présenter comme des actions réalisées tant que les informations réelles ne sont pas ajoutées.
+5. Le formulaire newsletter n’est pas connecté à un service d’inscription. Aucun formulaire de contact serveur ni paiement en ligne n’est actif.
+6. Compléter et vérifier les mentions légales, la confidentialité et les autorisations de droit à l’image avant publication.
+7. Vérifier l’adresse, le téléphone et l’e-mail sur un appareil réel. Les liens mailto/tel sont intégrés, mais leur fonctionnement externe n’a pas été testé.
+
+Coordonnées indiquées par l’association :
+Association ARRAHMA
+75 avenue Jean Jaurès, 34600 Bédarieux
+associationarrahma2025@gmail.com
+07 58 00 94 60
+
+Slogan : « Faire lien. Faire ensemble. »
+Palette : vert profond, orange et rouge, inspirée du logo officiel.
+Hébergement envisagé : GitHub Pages (site statique).
