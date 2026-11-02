@@ -1,0 +1,5 @@
+ARRAHMA — version complète pour GitHub Pages
+
+Décompressez ce ZIP. Téléversez tous les fichiers et dossiers qu’il contient à la racine du dépôt GitHub Pages en remplaçant les versions précédentes, puis validez le commit. GitHub Pages republiera le site automatiquement.
+
+Cette version comprend la recherche et les filtres combinables dans « Nos actions », la rubrique « Paroles et témoignages », ainsi que les images et le logo à la racine pour fiabiliser leurs chemins. Les contenus d’actions restent à compléter à partir des informations vérifiées de l’association.

@@ -1,0 +1,7 @@
+ARRAHMA - correctifs du 2 novembre 2026
+
+1. Page actions : chaque filtre thématique affiche désormais uniquement sa fiche propre (7 thématiques distinctes). Recherche améliorée : textContent au lieu de innerText, recherche sans accents, plusieurs mots possibles.
+2. Index : QR codes Instagram, Snapchat et QR vert ajoutés ; lien Instagram @asso.arrahma proposé d’après le projet associatif, à vérifier en ligne avant publication. Les destinations Snapchat et QR vert ne sont pas vérifiées.
+3. Le formulaire de contact est conservé tel quel.
+4. Contrôles statiques effectués ; test manuel navigateur et scans QR réels restent à réaliser.
+5. Remplacer le contenu du dépôt par les fichiers à la racine de ce ZIP, après sauvegarde.
