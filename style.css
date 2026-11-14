@@ -39,3 +39,5 @@ html{background:#fff}body{color:#172c25;background:#fff;font-family:'DM Sans',Ar
 .stats-access h2,.stats-privacy h2{font-size:1.6rem;color:var(--green)}
 .stats-access .button{margin-bottom:20px}
 .stats-access [hidden]{display:none!important}
+
+[data-activities-list]{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin:24px 0}.scheduled-activity{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff}.scheduled-activity h3{color:var(--green)}.scheduled-activity p{white-space:pre-line}.activity-empty{padding:20px;border:1px dashed #b8cabc;border-radius:12px;grid-column:1/-1}

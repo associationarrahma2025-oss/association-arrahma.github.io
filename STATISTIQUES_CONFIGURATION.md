@@ -1,6 +1,6 @@
 # Statistiques ARRAHMA — activation nécessaire
 
-Compte configuré : associationarrahma.goatcounter.com. Le compteur public est autorisé et le tableau de bord est réservé aux utilisateurs connectés. Collecte limitée aux pages, sessions et événements de téléchargement ; provenances, appareils, tailles d’écran, langues et localisation désactivés. Vérifications de production à effectuer après déploiement.
+Compte configuré : associationarrahma.goatcounter.com. Le compteur public est autorisé et le tableau de bord est réservé aux utilisateurs connectés. Collecte limitée aux pages, sessions et événements de téléchargement ; provenances limitées au site d’origine et aux liens sociaux balisés ; appareils, tailles d’écran, langues et localisation désactivés. Vérifications de production à effectuer après déploiement.
 
 ## Activation du compte
 
@@ -27,3 +27,13 @@ Les signaux DNT/GPC et le choix de désactivation sont respectés. Le choix de d
 La protection des détails repose sur la connexion du service, pas sur un mot de passe dans JavaScript ni un chemin « secret ». La page statistiques.html est seulement un point d’entrée public vers le tableau de bord authentifié et un accès au choix de confidentialité.
 
 Documentation officielle : https://www.goatcounter.com/help/start ; https://www.goatcounter.com/help/visitor-counter ; https://www.goatcounter.com/help/js ; https://www.goatcounter.com/help/privacy .
+
+## Gestion des activités
+
+- Page du site : inscriptions.html. Les activités ouvertes sont chargées automatiquement depuis l’espace activités.
+- Espace public : https://arrahma-inscriptions.bluegrain32.chatgpt.site
+- Gestion privée : https://arrahma-gestion-activites.bluegrain32.chatgpt.site (connexion ChatGPT du propriétaire).
+- Une séance datée = une activité. Ajouter/modifier une activité dans la gestion privée suffit pour mettre à jour le catalogue et son lien d’inscription.
+- Statuts des demandes : à traiter, confirmée, liste d’attente, annulée. Présences réservées aux personnes confirmées. Export CSV compatible Excel par activité, avec une ligne par participant et les coordonnées de l’adulte référent.
+- Aucune activité fictive ni inscription fictive n’est publiée. Les tests nominaux restent dans les tests locaux en mémoire.
+- Les noms, âges et coordonnées ne sont jamais envoyés au service de mesure d’audience. Les paramètres d’adresse bruts sont supprimés avant émission des mesures.

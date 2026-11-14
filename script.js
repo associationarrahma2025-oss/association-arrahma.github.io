@@ -106,3 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
   script.defer = true;
   document.head.appendChild(script);
 })();
+
+(() => {
+  if (!document.querySelector('[data-activities-list]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('activities.js', document.currentScript.src).href;
+  document.head.appendChild(script);
+})();

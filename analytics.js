@@ -50,8 +50,9 @@
     window.goatcounter = {
       path: () => trackingAllowed() ? location.pathname : null,
       // Aucun paramètre, fragment ou chemin de provenance potentiellement personnel.
-      referrer: document.referrer ? (() => { try { return new URL(document.referrer).origin; } catch (_) { return ''; } })() : '',
+      referrer: (() => { const source = new URLSearchParams(location.search).get('source'); const social = {facebook:'Facebook',instagram:'Instagram',snapchat:'Snapchat',linkedin:'LinkedIn'}; if (Object.hasOwn(social, source)) return 'Réseau social · ' + social[source]; try { return document.referrer ? new URL(document.referrer).origin : ''; } catch (_) { return ''; } })(),
       no_events: true,
+      no_onload: true,
       // Réévalué aussi après une désactivation sur la page courante.
       title: document.title
     };
@@ -60,7 +61,11 @@
     script.async = true;
     script.setAttribute('data-goatcounter', endpoint + '/count');
     script.addEventListener('load', () => {
+      // Ne transmettre ni paramètres d’adresse, ni largeur d’écran.
+      const originalData = window.goatcounter.get_data;
+      window.goatcounter.get_data = function(vars) { const data = originalData(vars); delete data.q; delete data.s; return data; };
       providerReady = true;
+      if (trackingAllowed()) window.goatcounter.count();
       if (trackingAllowed()) events.splice(0).forEach(sendEvent);
       else events.length = 0;
     }, { once: true });
