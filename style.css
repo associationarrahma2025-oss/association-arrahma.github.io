@@ -25,3 +25,7 @@ html{background:#fff}body{color:#172c25;background:#fff;font-family:'DM Sans',Ar
 
 /* Présentations complètes et dons */
 .editorial-domain .container>p{max-width:850px;line-height:1.85;margin:0 0 1.15rem}.editorial-domain .editorial-lead{font-size:1.22rem;font-weight:650}.editorial-domain .editorial-objective{font-weight:700;border-left:4px solid #267c58;padding:1rem 1.25rem;background:#f0f7f2}.action-intro .container{max-width:900px}.action-intro p{line-height:1.8;max-width:800px}.donation-choice{display:inline-block;margin:0.4rem 0.6rem 0.4rem 0}
+
+/* Navigation commune : conserver tous les liens visibles sur les écrans intermédiaires. */
+@media(min-width:761px){.main-nav{flex:1;min-width:0;flex-wrap:wrap;justify-content:flex-end;row-gap:0;padding:8px 0}}
+.action-search #action-reset{justify-self:start}
