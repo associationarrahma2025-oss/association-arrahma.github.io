@@ -29,3 +29,13 @@ html{background:#fff}body{color:#172c25;background:#fff;font-family:'DM Sans',Ar
 /* Navigation commune : conserver tous les liens visibles sur les écrans intermédiaires. */
 @media(min-width:761px){.main-nav{flex:1;min-width:0;flex-wrap:wrap;justify-content:flex-end;row-gap:0;padding:8px 0}}
 .action-search #action-reset{justify-self:start}
+
+/* Compteur discret et accès aux statistiques de l’équipe. */
+.site-statistics{border-top:1px solid var(--line);background:var(--cream);color:var(--green);font-size:.8rem}
+.site-statistics .container{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.site-statistics a{text-decoration:underline;text-underline-offset:3px}
+.site-statistics strong{font-variant-numeric:tabular-nums}
+.stats-access,.stats-privacy{max-width:820px;margin:0 auto 36px;padding:28px;border:1px solid var(--line);border-radius:16px}
+.stats-access h2,.stats-privacy h2{font-size:1.6rem;color:var(--green)}
+.stats-access .button{margin-bottom:20px}
+.stats-access [hidden]{display:none!important}

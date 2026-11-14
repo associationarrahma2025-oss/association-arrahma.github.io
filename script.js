@@ -98,3 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
   buttons.forEach(button => button.setAttribute('aria-pressed', String((button.dataset.filter || 'all') === 'all')));
   applyFilters();
 });
+
+// Mesure d’audience : module commun, indépendant des filtres et du menu.
+(() => {
+  const script = document.createElement('script');
+  script.src = new URL('analytics.js', document.currentScript.src).href;
+  script.defer = true;
+  document.head.appendChild(script);
+})();
