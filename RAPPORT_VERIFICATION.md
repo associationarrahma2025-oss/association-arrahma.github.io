@@ -28,3 +28,15 @@
 - GitHub, hébergement et coordonnées : https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
 - Formspree, confidentialité : https://formspree.io/legal/privacy-policy/
 - Formspree, sécurité et transferts : https://formspree.io/security/
+
+## Documents officiels et catalogue — complément du 15 novembre 2026
+- Création de documents.html, accessible depuis L’association et tous les pieds de page.
+- Trois PDF consultables et téléchargeables : projet associatif, JOAFE et SIRENE. JOAFE et SIRENE publiés à l’identique ; copie de publication du projet mise à jour pour refléter la validation confirmée par le président. Les fichiers téléversés d’origine sont conservés.
+- Seul le règlement intérieur reste « en attente d’approbation » ; aucun règlement adopté n’est publié.
+- 42 fiches HTML détaillées FA01 à FA42, issues des pages 14 à 55 du projet. Six fiches à structurer classées en préparation, 36 perspectives ou prochaines éditions classées en projet, avec leurs statuts source conservés. Les activités réellement ouvertes restent dans le calendrier distinct.
+- Sept domaines, avec neuf fiches d’appui transversal communes ; aucune création d’un huitième domaine public.
+- Barème familial annuel harmonisé avec le projet validé : 15 €, 25 € et 30 € selon le quotient familial CAF.
+- Contrôle structurel de 67 pages : aucun lien local, fichier ou fragment manquant ; aucun identifiant dupliqué ni référence ARIA manquante.
+- Contrôle des 42 correspondances avec les pages du PDF, des 7 répartitions et des 9 liens transversaux par domaine.
+- Téléchargement réel des trois PDF depuis le navigateur d’aperçu : OK. Affichage téléphone vérifié à 320 et 390 px ; aucun débordement horizontal observé sur les vues contrôlées.
+- Recherche FA15 : 1 résultat ; filtres préparation : 6, projet : 36 ; remise à zéro : 42.

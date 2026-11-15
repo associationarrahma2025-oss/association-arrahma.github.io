@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (count) {
       count.textContent = visible === 0
-        ? 'Aucune action ne correspond à ces critères. Essaie un autre mot-clé ou réinitialise les filtres.'
+        ? (selectedType === 'ouverte' ? 'Aucune fiche du catalogue n’est annoncée ouverte. Consultez le calendrier en haut de page pour les activités effectivement ouvertes.' : 'Aucune fiche ne correspond à ces critères. Essayez un autre mot-clé ou réinitialisez les filtres.')
         : `${visible} fiche${visible > 1 ? 's' : ''} affichée${visible > 1 ? 's' : ''}`;
     }
   }
