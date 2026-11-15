@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(isOpen));
     });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus();
+      }
+    });
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
       nav.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
@@ -110,51 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 (() => {
   if (!document.querySelector('[data-activities-list]')) return;
   const script = document.createElement('script');
-  script.src = new URL('activities.js', document.currentScript.src).href;
+  script.src = new URL('activities.js?v=676b45c1b4', document.currentScript.src).href;
   document.head.appendChild(script);
 })();
 
-// Comptes officiels confirmés par l’association ; destinations lues dans les QR codes.
-document.addEventListener('DOMContentLoaded', () => {
-  const networks = [
-    ['Instagram', 'https://www.instagram.com/asso.arrahma'],
-    ['Snapchat', 'https://www.snapchat.com/add/asso.arrahma'],
-    ['Facebook', 'https://www.facebook.com/profile.php?id=61575059852671']
-  ];
-  const createLink = (name, url) => {
-    const link = document.createElement('a');
-    link.href = url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = name + ' ↗';
-    link.setAttribute('aria-label', name + ' ARRAHMA (nouvel onglet)');
-    return link;
-  };
-  document.querySelectorAll('#reseaux-qr .qr-card').forEach((card, index) => {
-    if (!networks[index]) return;
-    const [name, url] = networks[index];
-    const image = card.querySelector('img');
-    if (image && !image.closest('a')) {
-      const link = createLink(name, url);
-      link.textContent = '';
-      image.replaceWith(link);
-      link.appendChild(image);
-    }
-    if (!card.querySelector('.qr-direct-link')) {
-      const directLink = createLink(name, url);
-      directLink.className = 'qr-direct-link';
-      card.appendChild(directLink);
-    }
-  });
-  document.querySelectorAll('.social-direct').forEach(container => {
-    container.replaceChildren();
-    networks.forEach(([name, url], index) => {
-      if (index) container.appendChild(document.createTextNode(' · '));
-      container.appendChild(createLink(name, url));
-    });
-    const note = container.nextElementSibling;
-    if (note && note.textContent.includes('dès que leurs liens auront été vérifiés')) {
-      note.textContent = 'Retrouvez les actualités de l’association sur nos comptes officiels.';
-    }
-  });
-});
