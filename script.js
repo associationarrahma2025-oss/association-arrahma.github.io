@@ -18,6 +18,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+
+  // TikTok officiel ARRAHMA : lien sur toutes les pages et QR sur l'accueil.
+  const tiktokUrl = 'https://vm.tiktok.com/ZG9fthHwYooPS-TbkFT/';
+  const socialFooter = document.querySelector('.site-footer .social-direct');
+  if (socialFooter && !socialFooter.querySelector('[data-arrahma-tiktok]')) {
+    const link = document.createElement('a');
+    link.href = tiktokUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.setAttribute('aria-label', 'TikTok ARRAHMA (nouvel onglet)');
+    link.dataset.arrahmaTiktok = 'true';
+    link.textContent = 'TikTok ↗';
+    socialFooter.appendChild(link);
+  }
+  const qrGrid = document.getElementById('reseaux-qr');
+  if (qrGrid && !qrGrid.querySelector('[data-arrahma-tiktok]')) {
+    const card = document.createElement('div');
+    card.className = 'qr-card';
+    card.dataset.arrahmaTiktok = 'true';
+    const anchor = document.createElement('a');
+    anchor.href = tiktokUrl;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+    anchor.setAttribute('aria-label', 'TikTok ARRAHMA (nouvel onglet)');
+    const img = document.createElement('img');
+    img.alt = 'QR code TikTok ARRAHMA, compte ASSO.ARRAHMA';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.width = 300;
+    img.height = 300;
+    img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data=' + encodeURIComponent(tiktokUrl);
+    anchor.appendChild(img);
+    const name = document.createElement('strong');
+    name.textContent = 'TikTok';
+    const handle = document.createElement('span');
+    handle.textContent = '@asso.arrahma';
+    const direct = document.createElement('a');
+    direct.className = 'qr-direct-link';
+    direct.href = tiktokUrl;
+    direct.target = '_blank';
+    direct.rel = 'noopener noreferrer';
+    direct.textContent = 'Ouvrir TikTok ↗';
+    card.append(anchor, name, handle, direct);
+    qrGrid.appendChild(card);
+    const intro = qrGrid.previousElementSibling?.querySelector('p');
+    if (intro && intro.textContent.includes('Instagram, Snapchat et Facebook')) {
+      intro.textContent = 'Suivez nos actualités sur Instagram, Snapchat, Facebook et TikTok.';
+    }
+  }
+
   // Année du pied de page
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
